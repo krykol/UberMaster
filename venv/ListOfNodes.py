@@ -9,6 +9,8 @@ class ListOfNodes:
         self.x_table = []
         self.y_table = []
         self.nodes_table = []
+        self.connections_allowed_table = []
+        self.cost_table = []
 
 
         while self.x_table.__len__() < size:

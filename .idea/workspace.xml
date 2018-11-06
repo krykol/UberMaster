@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79c90ffa-2c58-4ba2-bbdc-fa5d035baaa9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/venv/ListOfNodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/ListOfNodes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/testing.py" afterDir="false" />
-    </list>
+    <list default="true" id="79c90ffa-2c58-4ba2-bbdc-fa5d035baaa9" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +27,11 @@
       <file leaf-file-name="MapInicialization.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/MapInicialization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+            <state relative-caret-position="60">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,10 +48,14 @@
       <file leaf-file-name="ListOfNodes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venv/ListOfNodes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="105">
+              <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
               <folding>
                 <element signature="e#191#204#0" expanded="true" />
+                <element signature="e#321#1109#0" />
+                <element signature="e#796#915#0" />
+                <element signature="e#1255#1297#0" />
+                <element signature="e#1341#1383#0" />
               </folding>
             </state>
           </provider>
@@ -278,13 +281,6 @@
     <entry file="file://$PROJECT_DIR$/venv/szowTheCity.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/MapInicialization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -309,12 +305,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/MapInicialization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/ListOfNodes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state relative-caret-position="105">
+          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
           <folding>
             <element signature="e#191#204#0" expanded="true" />
+            <element signature="e#321#1109#0" />
+            <element signature="e#796#915#0" />
+            <element signature="e#1255#1297#0" />
+            <element signature="e#1341#1383#0" />
           </folding>
         </state>
       </provider>
