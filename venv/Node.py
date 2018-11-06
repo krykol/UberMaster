@@ -4,4 +4,4 @@ class Node:
         self.y_d = y_d
 
     def __str__(self):
-        return " X: " + str(self.x_d) + " \tY: " + str(self.y_d)
+        return " \tX: " +"\t" +str(self.x_d) + " \tY: " + str(self.y_d)

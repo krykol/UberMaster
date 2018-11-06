@@ -3,7 +3,7 @@ import random
 
 from ListOfNodes import ListOfNodes
 
-listajakas = ListOfNodes(5, 10, 10)
+listajakas = ListOfNodes(5000, 10000, 10000)
 
 
 listajakas.showAllNodes()

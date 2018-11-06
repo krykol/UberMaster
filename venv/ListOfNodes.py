@@ -44,3 +44,5 @@ class ListOfNodes:
     def showY(self):
         for i in self.y_table:
             print(i)
+
+    def
