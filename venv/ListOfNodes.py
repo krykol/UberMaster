@@ -3,20 +3,36 @@
 # sprawdzała by nam, czy przypadkiem nie dodajemy istniejącego już puntu
 import random
 from Node import Node
-class ListOfNodes():
+
+
+class ListOfNodes:
     def __init__(self, size = 50, x_range = 100, y_range = 100):
-        x_table = []
-        y_table = []
+        self.x_table = []
+        self.y_table = []
+        self.nodes_table = []
 
-        nodes_table = []
 
+        while self.x_table.__len__() < size:
+            x_temp = random.randint(0, x_range)
+            y_temp = random.randint(0, y_range)
 
-        while x_table.__len__() < size:
-            x_temp = random.randint(x_range)
-            y_temp = random.randint(y_range)
-
-            if x_temp in x_table and y_temp in y_table:
-                continue
+            if x_temp in self.x_table:
+                if y_temp in self.y_table:
+                    continue
             else:
-                nodes_table.append(Node)
+                self.x_table.append(x_temp)
+                self.y_table.append(y_temp)
 
+        temp = 0
+
+        for i in self.x_table:
+            self.nodes_table.append(Node(i,self.y_table[temp]))
+            temp+=1
+
+
+    def showAllNodes(self):
+        temp = 1
+        for i in self.nodes_table:
+            print(temp)
+            print("Node number: ", temp, i.__str__())
+            temp += 1

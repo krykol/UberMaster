@@ -1,4 +1,4 @@
-from Nodes import Nodes
+from Node import Node
 import random
 
 
