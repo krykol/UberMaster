@@ -3,7 +3,7 @@ from ListOfNodes import ListOfNodes
 
 
 
-listOfNodes = ListOfNodes(50, 10000, 10000)
+listOfNodes = ListOfNodes(500, 1000000, 1000000)
 
 
 plt.plot(listOfNodes.retXTable(), listOfNodes.retYTable(),'ro')
