@@ -45,4 +45,8 @@ class ListOfNodes:
         for i in self.y_table:
             print(i)
 
-    def
+    def retXTable(self):
+        return self.x_table
+
+    def retYTable(self):
+        return self.y_table

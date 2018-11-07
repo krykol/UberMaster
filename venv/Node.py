@@ -5,3 +5,6 @@ class Node:
 
     def __str__(self):
         return " \tX: " +"\t" +str(self.x_d) + " \tY: " + str(self.y_d)
+
+    def XandY(self):
+        return self.x_d, self.y_d
