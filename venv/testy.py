@@ -9,13 +9,14 @@ from ListOfNodes import ListOfNodes
 listajakas = ListOfNodes(5000, 10000, 10000)
 
 
-listajakas.showAllNodes()
+#listajakas.showAllNodes()
 
-polaczenia = Connections()
+polaczenia = Connections(10)
 
-a = polaczenia.create_matrix(4,23)
 
-print(a)
+
+
+#print(polaczenia.matrix)
 
 # listajakas.showX()
 #
