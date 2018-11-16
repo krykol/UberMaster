@@ -6,13 +6,12 @@ import matplotlib.pyplot as plt
 
 
 class ListOfNodes:
-    def __init__(self, size = 50, x_range = 100, y_range = 100):
+    def __init__(self, size=50, x_range=100, y_range=100):
         self.x_table = []
         self.y_table = []
         self.nodes_table = []
         self.connections_allowed_table = []
         self.cost_table = []
-
 
         while self.x_table.__len__() < size:
             x_temp = random.randint(0, x_range)
@@ -23,14 +22,13 @@ class ListOfNodes:
             else:
                 self.x_table.append(x_temp)
                 self.y_table.append(y_temp)
-                #print("X: ", x_temp, " Y: ", y_temp)   #sprawdzenie jakie liczby nam się tam pojawiają
+                # print("X: ", x_temp, " Y: ", y_temp)   #sprawdzenie jakie liczby nam się tam pojawiają
 
         temp = 0
 
         for x in self.x_table:
             self.nodes_table.append(Node(x, self.y_table[temp], temp, size))
-            temp+=1
-
+            temp += 1
 
     def showAllNodes(self):
         for i in self.nodes_table:
@@ -50,7 +48,6 @@ class ListOfNodes:
     def retYTable(self):
         return self.y_table
 
-
     def showTheCity(self):
 
         for node in self.nodes_table:
@@ -61,31 +58,20 @@ class ListOfNodes:
             y_tab = []
 
             for i in IDconnectionTab:
+                print(i)
                 x_tab.append(self.nodes_table[i].getX())
                 y_tab.append(self.nodes_table[i].getY())
 
             temp = 0
 
+            print("list: ", IDconnectionTab)
+            print(nodeX)
+            print(nodeY)
+            print("x: ", x_tab)
+            print("y: ", y_tab)
+
             for x in x_tab:
-                plt.plot([nodeX, x], [nodeY, y_tab[temp]], 'bo')
+                plt.plot([nodeX, x], [nodeY, y_tab[temp]], linestyle='-', marker='o')
+                temp += 1
 
-            plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        plt.show()

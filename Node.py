@@ -17,8 +17,14 @@ class Node:
         # we need to have list of the node's ID that we are connected with
         self.listOfConnections = []
 
-        for i in range(0, rd.randint(1, self.limOfConnections)):
-            self.listOfConnections.append(rd.randint(numOfAllNodes))
+        currentVal = rd.randint(1, self.limOfConnections)
+
+        while self.listOfConnections.__len__() < currentVal:
+            newID = rd.randint(0, numOfAllNodes-1)
+
+            if not newID in self.listOfConnections:
+                self.listOfConnections.append(newID)
+
 
 
 
