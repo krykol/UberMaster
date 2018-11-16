@@ -2,6 +2,7 @@
 # sprawdzała by nam, czy przypadkiem nie dodajemy istniejącego już puntu
 import random
 from Node import Node
+import matplotlib.pyplot as plt
 
 
 class ListOfNodes:
@@ -27,15 +28,13 @@ class ListOfNodes:
         temp = 0
 
         for x in self.x_table:
-            self.nodes_table.append(Node(x, self.y_table[temp]))
+            self.nodes_table.append(Node(x, self.y_table[temp], temp, size))
             temp+=1
 
 
     def showAllNodes(self):
-        temp = 1
         for i in self.nodes_table:
-            print("Node number: "+ str(temp) + i.__str__())
-            temp += 1
+            print(i.__str__())
 
     def showX(self):
         for i in self.x_table:
@@ -50,3 +49,43 @@ class ListOfNodes:
 
     def retYTable(self):
         return self.y_table
+
+
+    def showTheCity(self):
+
+        for node in self.nodes_table:
+            nodeX, nodeY = node.XandY()
+
+            IDconnectionTab = node.retIDOfConnectedNodes()
+            x_tab = []
+            y_tab = []
+
+            for i in IDconnectionTab:
+                x_tab.append(self.nodes_table[i].getX())
+                y_tab.append(self.nodes_table[i].getY())
+
+            temp = 0
+
+            for x in x_tab:
+                plt.plot([nodeX, x], [nodeY, y_tab[temp]], 'bo')
+
+            plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

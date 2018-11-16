@@ -3,7 +3,7 @@ def dijkstra(graph, start_node):
 
     visit_queue = [start_node]
     predecesor = {node: node for node in graph.nodes}
-    distance = {node: INFINITY for nsode in graph.nodes}
+    distance = {node: INFINITY for node in graph.nodes}
     distance[start_node] = 0
 
     while visit_queue:
